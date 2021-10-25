@@ -1,9 +1,21 @@
 # E-Assist
 cp3405-scrum-project-a3-sp51-2021
 
-## Participants (Team A3)
-Justin Malvin Irawan, Andres Fernando Garcia Delgado, Richard Willianto Krissan, Fransiskus Jeffry, Fadhil Mulyono Yulius, Naychi Ko Ko, Julian Evan
-
+## Participants and Developers (Team A3)
+Andres Fernando Garcia Delgado
+andresgercie@gmail.com / https://www.linkedin.com/in/andres-fernando-garcia-delgado-160b50190/
+Fadhil Mulyono Yulius
+fadhilmulyono@outlook.com / https://www.linkedin.com/in/fadhil-mulyono-357007b6/
+Fransiskus Jeffry
+fransiskus.jeffry@gmail.com / https://www.linkedin.com/in/fransiskus-jeffry-132b50190/
+Julian Evan
+julianevan72@gmail.com / https://www.linkedin.com/in/julian-evan-872b50190/
+Justin Malvin Irawan
+justinmalvin23@gmail.com / https://www.linkedin.com/in/justin-malvin-628b5918b/
+Naychi Ko Ko
+naychikoko@my.jcu.edu.au
+Richard Willianto Krisan
+richard.willianto@gmail.com / https://www.linkedin.com/in/richard-willianto-835b50190/
 ## Description
 This is an app to help the elderly use their Android mobile phone. 
 Our solution uses the built in applications of the Android OS and itegrates some of their functionality within the app, 
