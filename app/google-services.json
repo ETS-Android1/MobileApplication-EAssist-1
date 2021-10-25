@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "936382740116",
+    "firebase_url": "https://elderlymobileguide-default-rtdb.firebaseio.com",
+    "project_id": "elderlymobileguide",
+    "storage_bucket": "elderlymobileguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936382740116:android:4d0b7e5eeb57efa4f72681",
+        "android_client_info": {
+          "package_name": "com.example.elderlyapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936382740116-m0mihipckh9p2f6662fje0mcb6mchrcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo8nuZfae18SfZkk3kQkx0Y-jdvhNVm7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936382740116-m0mihipckh9p2f6662fje0mcb6mchrcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936382740116:android:2e613d3da30a785af72681",
+        "android_client_info": {
+          "package_name": "com.example.elderlymobileguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936382740116-m0mihipckh9p2f6662fje0mcb6mchrcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo8nuZfae18SfZkk3kQkx0Y-jdvhNVm7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936382740116-m0mihipckh9p2f6662fje0mcb6mchrcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".SearchApps">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/ApplicationList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center"
+                android:text="Applications"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tutorialBtn5" />
+
+            <Button
+                android:id="@+id/tutorialBtn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/tutorial_button_background"
+                android:text="Tutorial"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id='@+id/bottomNavigationView'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1450dp"
+                app:backgroundTint="@color/white"
+                app:itemIconSize="30dp"
+                app:labelVisibilityMode="unlabeled"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/navigation_menu" />
+
+            <ImageButton
+                android:id="@+id/calendarIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/calendar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ApplicationList" />
+
+            <TextView
+                android:id="@+id/calendarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Calendar"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/calendarIcon"
+                app:layout_constraintStart_toStartOf="@+id/calendarIcon"
+                app:layout_constraintTop_toBottomOf="@+id/calendarIcon" />
+
+            <ImageButton
+                android:id="@+id/clockIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/clock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ApplicationList" />
+
+            <TextView
+                android:id="@+id/clockName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Clock"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/clockIcon"
+                app:layout_constraintStart_toStartOf="@+id/clockIcon"
+                app:layout_constraintTop_toBottomOf="@+id/clockIcon" />
+
+            <ImageButton
+                android:id="@+id/contactIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendarName" />
+
+            <TextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contact"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/contactIcon"
+                app:layout_constraintStart_toStartOf="@+id/contactIcon"
+                app:layout_constraintTop_toBottomOf="@+id/contactIcon" />
+
+            <ImageButton
+                android:id="@+id/emailIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clockName" />
+
+            <TextView
+                android:id="@+id/emailName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/emailIcon"
+                app:layout_constraintStart_toStartOf="@+id/emailIcon"
+                app:layout_constraintTop_toBottomOf="@+id/emailIcon" />
+
+            <ImageButton
+                android:id="@+id/galleryIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/gallery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
+            <TextView
+                android:id="@+id/galleryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gallery"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/galleryIcon"
+                app:layout_constraintStart_toStartOf="@+id/galleryIcon"
+                app:layout_constraintTop_toBottomOf="@+id/galleryIcon" />
+
+            <ImageButton
+                android:id="@+id/internetIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/internet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailName" />
+
+            <TextView
+                android:id="@+id/internetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Internet"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/internetIcon"
+                app:layout_constraintStart_toStartOf="@+id/internetIcon"
+                app:layout_constraintTop_toBottomOf="@+id/internetIcon" />
+
+            <ImageButton
+                android:id="@+id/mapsIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/maps"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/galleryName" />
+
+            <TextView
+                android:id="@+id/mapsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Maps"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/mapsIcon"
+                app:layout_constraintStart_toStartOf="@+id/mapsIcon"
+                app:layout_constraintTop_toBottomOf="@+id/mapsIcon" />
+
+            <ImageButton
+                android:id="@+id/messageIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/internetName" />
+
+            <TextView
+                android:id="@+id/messageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Message"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/messageIcon"
+                app:layout_constraintStart_toStartOf="@+id/messageIcon"
+                app:layout_constraintTop_toBottomOf="@+id/messageIcon" />
+
+            <ImageButton
+                android:id="@+id/callIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/call"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapsName" />
+
+            <TextView
+                android:id="@+id/callName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Phone"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/callIcon"
+                app:layout_constraintStart_toStartOf="@+id/callIcon"
+                app:layout_constraintTop_toBottomOf="@+id/callIcon" />
+
+            <ImageButton
+                android:id="@+id/settingIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/messageName" />
+
+            <TextView
+                android:id="@+id/settingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/settingIcon"
+                app:layout_constraintStart_toStartOf="@+id/settingIcon"
+                app:layout_constraintTop_toBottomOf="@+id/settingIcon" />
+
+            <ImageButton
+                android:id="@+id/youtubeIcon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/grey_bg"
+                android:scaleType="fitCenter"
+                android:src="@drawable/youtube"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/callName" />
+
+            <TextView
+                android:id="@+id/youtubeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:text="Youtube"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/youtubeIcon"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/youtubeIcon"
+                app:layout_constraintTop_toBottomOf="@+id/youtubeIcon"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>
